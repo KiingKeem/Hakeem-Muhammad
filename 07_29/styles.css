@@ -1,7 +1,5 @@
-.container-fluid{
-    /* background-color: lightblue; */
-    height: 100px;
-    padding: 20px;
+.jumbotron-fluid{
+    height: auto;
 }
 
 .container-sm{
