@@ -20,10 +20,10 @@
 			<div class="row">
 				<div class="col">
 					<ul class="list-group mt-5 text-right">
-						<li class="list-group-item bg-dark border-">
+						<li class="list-group-item bg-dark border-" data-toggle="collapse" data-target="#mobileNavbar">
 							<a href="#emojis">Emojis</a>
 						</li>
-						<li class="list-group-item bg-dark border-">
+						<li class="list-group-item bg-dark border-" data-toggle="collapse" data-target="#mobileNavbar">
 							<a href="#alerts">Alerts</a>
 						</li>
 					</ul>
@@ -122,63 +122,134 @@
 						<div id="alerts" class="row">
 							<h2 class="section-header">Alerts</h2>
 						</div>
-								<div class="alert alert-primary alert-dismissible fade show" role="alert">
-									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<div class="alert alert-primary alert-dismissible fade show" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-									<strong>.alert-primary</strong>
-                                </div>
-                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<strong>.alert-primary</strong>
+						</div>
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-									<strong>.alert-primary</strong>
-                                </div>
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<strong>.alert-primary</strong>
+						</div>
+						<div class="alert alert-success alert-dismissible fade show" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-									<strong>.alert-primary</strong>
-                                </div>
+							<strong>.alert-primary</strong>
+						</div>
 
-                                <!-- Buttons -->
+						<!-- Buttons -->
 						<div id="buttons" class="row">
 							<h2 class="section-header">Buttons</h2>
 						</div>
-                        <div class="row">
-                        <button class="btn mr-2 btn-primary">Button</button>
-                        <button class="btn mr-2 btn-outline-primary">Outline</button>
-                        <button class="btn mr-2 btn-danger">Danger</button>
-                        <button class="btn mr-2 btn-success">Success</button>
-                        <button class="btn mr-2 mt-2 btn-info btn-block">Block</button>
-                        </div>
+						<div class="row">
+							<button class="btn mr-2 btn-primary">Button</button>
+							<button class="btn mr-2 btn-outline-primary">Outline</button>
+							<button class="btn mr-2 btn-danger">Danger</button>
+							<button class="btn mr-2 btn-success">Success</button>
+							<button class="btn mr-2 mt-2 btn-info btn-block">Block</button>
+						</div>
 
-								<!-- Carousel -->
+						<!-- Cards -->
+						<div id="cards" class="row">
+							<h2 class="section-header">Cards</h2>
+						</div>
+						<div class="row">
+                            <div class="col-xs-10 col-sm-6 mb-5">
+                                <div class="card" style="width: auto;">
+								    <div class="card-header">Sunset</div>
+                                    <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg" class="card-img-top" alt="Sunset Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sunset</h5>
+                                        <p class="card-text">The sunset looks pretty cool over the mountains.</p>
+                                        <a href="#" class=btn btn-primary data-toggle="modal" data-target="#exampleModal">Click</a>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col">
+								<div class="card" style="width: auto;">
+									<div class="card-header">Detroit Skyline</div>
+                                    <img src="https://traknetsolutions.com/wp-content/uploads/2019/11/detroit-skyline-linda-goodhue-photography.jpg" class="card-img-top" alt="Detroit Image">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Sunset</h5>
+                                        <p class="card-text">The buildings in Detroit look pretty cool.</p>
+                                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click</a>
+                                    </div>
+									    
+                                </div>
+							</div>
+						</div>
 
-								<!-- Form -->
 
-								<!-- Model -->
+                                    <!-- Modals -->
+                                    <div class="modal fade" id="exampleModal">
 
-								<!-- Collapse -->
+                                        <!-- 
+                                            Modal Dialog
+                                                Modal Content
+                                                    Modal Header
+                                                        Modal Title & Close Button
+                                            Modal Body
+                                            Modal Footer
 
-								<!-- Dropdown -->
+                                         -->
 
-							
+                                         <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal Title</h5>
+                                                    <button class="close" data-dismiss="modal">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <!-- Modal Body -->
+                                                <div class="modal-body">
+                                                    <p>This is the modal's body. Information goes here.</p>
+                                                </div>
+                                                <!-- Modal Footer -->
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-danger"
+                                                    data-dismiss="modal">Close</button>
+                                                
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
 
-							<!-- <div class="container-sm">100% wide until small breakpoint</div>
+									<!-- Carousel -->
+                                    <div class="row" id="carousel">
+                                        <h1 class="section-header">Carousel</h1>
+                                    </div>
+
+									<!-- Form -->
+
+									<!-- Model -->
+
+									<!-- Collapse -->
+
+									<!-- Dropdown -->
+
+
+
+									<!-- <div class="container-sm">100% wide until small breakpoint</div>
     <div class="container-md">100% wide until medium breakpoint</div>
     <div class="container-lg">100% wide until large breakpoint</div>
     <div class="container-xl">100% wide until extra large breakpoint</div> -->
 
-							<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-								integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-								crossorigin="anonymous"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-								integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-								crossorigin="anonymous"></script>
-							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-								integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-								crossorigin="anonymous"></script>
+									<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+										integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+										crossorigin="anonymous"></script>
+									<script
+										src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+										integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+										crossorigin="anonymous"></script>
+									<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+										integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+										crossorigin="anonymous"></script>
 </body>
 
 </html>
