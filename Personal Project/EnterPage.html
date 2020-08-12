@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hakeem Muhammad</title>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<!-- Bootstrap Stuff -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hakeem Muhammad</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<!-- Font-Awesome CDN -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+	integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+<body>
+	<!-- Navbar -->
+
+	<nav class="top-right">
+		<a class="disc l1">
+			<div>Messages</div>
+		</a>
+		<a class="disc l2">
+			<div>Photos</div>
+		</a>
+		<a class="disc l3">
+			<div>Profile</div>
+		</a>
+		<a class="disc l4">
+			<div>Likes</div>
+		</a>
+		<a class="disc l5 toggle">Menu</a>
+	</nav>
+
+	<!-- Nav JS -->
+	<script>
+		toggle = document.querySelectorAll(".toggle")[0];
+nav = document.querySelectorAll("nav")[0];
+toggle_open_text = 'Menu';
+toggle_close_text = 'Close';
+
+toggle.addEventListener('click', function() {
+	nav.classList.toggle('open');
+	
+  if (nav.classList.contains('open')) {
+    toggle.innerHTML = toggle_close_text;
+  } else {
+    toggle.innerHTML = toggle_open_text;
+  }
+}, false);
+
+setTimeout(function(){
+	nav.classList.toggle('open');	
+}, 800);
+	</script>
+
+	<!-- Jumbotron -->
+	<div class="card card-image jumbotron fade-in"
+		style="background-image: url(https://www-03.ibm.com/press/us/en/attachment/47895.wss?fileId=ATTACH_FILE2&fileName=STFCdatacenter-1.jpg);">
+		<div class="text-white text-center rgba-stylish-strong py-5 px-4">
+			<div class="py-5">
+
+				<!-- Content -->
+				<h5 class="h5 orange-text fade-in">Full-stack development and Hardware
+					Engineering</h5>
+				<h2 class="card-title h2 my-4 py-2 fade-in"><strong>Hakeem Muhammad</strong></h2>
+				<p class="mb-4 pb-2 px-md-5 mx-md-5 fade-in">Welcome to my online portfolio! my name is Hakeem.
+					I am a
+					17 year
+					old highschool senior
+					with a passion for program development and computer/electronic repair.</p>
+
+				<!-- Instagram -->
+				<a class="fa-lg p-2 m-2 tw-ic"><i class="ig-ic fab fa-instagram"></i></a>
+				<!-- Twitter -->
+				<a class="fa-lg p-2 m-2 tw-ic"><i class="tw-ic fab fa-twitter"></i></a>
+				<!-- Facebook -->
+				<a class="fa-lg p-2 m-2 fb-ic"><i class="fb-ic fab fa-facebook-f"></i></a>
+
+				<!-- Footer -->
+				<div id="container">
+					<div id="header"></div>
+					<div id="body"></div>
+					<div id="footer"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</body>
+
+<div class="div-f">
+	<footer>
+
+	</footer>
+</div>
+
+</html>
