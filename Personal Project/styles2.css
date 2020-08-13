@@ -31,6 +31,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
+    background-attachment: fixed;
 }
 /* Jumbotron Text Animations */
 .fade-in {
@@ -134,7 +135,7 @@ header {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   text-align: left;
   top: 100%;
   left: 0;
@@ -143,7 +144,8 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
-  
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 nav ul {
@@ -196,7 +198,7 @@ nav a:hover {
   }
   
   nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
+    all: unset; /* this causes issues with Edge, since it's unsupported */
     
     /* the following lines are not from my video, but add Edge support */
     position: relative;
@@ -266,3 +268,8 @@ nav a:hover {
 /* Desc Color */
 .color{
   color: black;
+}
+
+/* Unordered List */
+
+}
