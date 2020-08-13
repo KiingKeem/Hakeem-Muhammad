@@ -7,7 +7,7 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <!-- Font -->
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 <link href="styles.css" rel="stylesheet" type="text/css">
 
 <!-- Bootstrap Stuff -->
@@ -23,48 +23,22 @@
 
 <body>
 	<!-- Navbar -->
-
-	<nav class="top-right">
-		<a class="disc l1">
-			<div>Messages</div>
-		</a>
-		<a class="disc l2">
-			<div>Photos</div>
-		</a>
-		<a class="disc l3">
-			<div>Profile</div>
-		</a>
-		<a class="disc l4">
-			<div>Likes</div>
-		</a>
-		<a class="disc l5 toggle">Menu</a>
-	</nav>
-
-	<!-- Nav JS -->
-	<script>
-		toggle = document.querySelectorAll(".toggle")[0];
-nav = document.querySelectorAll("nav")[0];
-toggle_open_text = 'Menu';
-toggle_close_text = 'Close';
-
-toggle.addEventListener('click', function() {
-	nav.classList.toggle('open');
-	
-  if (nav.classList.contains('open')) {
-    toggle.innerHTML = toggle_close_text;
-  } else {
-    toggle.innerHTML = toggle_open_text;
-  }
-}, false);
-
-setTimeout(function(){
-	nav.classList.toggle('open');	
-}, 800);
-	</script>
+	<header>
+		<h1 class="logo">[Welcome]</h1>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<nav>
+			<ul>
+				<li><a href="EnterPage.html">Home</a></li>
+				<li><a href="SecondPage.html">About Me</a></li>
+			</ul>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+	</header>
 
 	<!-- Jumbotron -->
-	<div class="card card-image jumbotron fade-in"
-		style="background-image: url(https://www-03.ibm.com/press/us/en/attachment/47895.wss?fileId=ATTACH_FILE2&fileName=STFCdatacenter-1.jpg);">
+	<div class="jumbotron" style="background-image: url(https://i.imgur.com/DoCimmQ.jpg?1);">
 		<div class="text-white text-center rgba-stylish-strong py-5 px-4">
 			<div class="py-5">
 
@@ -79,30 +53,24 @@ setTimeout(function(){
 					with a passion for program development and computer/electronic repair.</p>
 
 				<!-- Instagram -->
-				<a class="fa-lg p-2 m-2 tw-ic"><i class="ig-ic fab fa-instagram"></i></a>
+				<a class="fa-lg p-2 m-2 tw-ic"
+					href="https://www.instagram.com/kiing.keem/"><i class="ig-ic fab fa-instagram"></i></a>
 				<!-- Twitter -->
-				<a class="fa-lg p-2 m-2 tw-ic"><i class="tw-ic fab fa-twitter"></i></a>
+				<a class="fa-lg p-2 m-2 tw-ic"
+					href="https://twitter.com/kiiingkeem"><i class="tw-ic fab fa-twitter"></i></a>
 				<!-- Facebook -->
-				<a class="fa-lg p-2 m-2 fb-ic"><i class="fb-ic fab fa-facebook-f"></i></a>
+				<a class="fa-lg p-2 m-2 fb-ic"
+					href="https://www.facebook.com/hakeem.muhammad.58"><i class="fb-ic fab fa-facebook-f"></i></a>
 
 				<!-- Footer -->
-				<div id="container">
-					<div id="header"></div>
-					<div id="body"></div>
-					<div id="footer"></div>
-				</div>
+
+
 
 			</div>
 		</div>
 	</div>
-	</div>
+	<div class="container">
 	</div>
 </body>
-
-<div class="div-f">
-	<footer>
-
-	</footer>
-</div>
 
 </html>

@@ -1,27 +1,38 @@
 body {
     margin-bottom: 100%;
-	margin: 0;
-	background: #222;
+	margin: 0px;
+	background: white;
 	font-family: 'Raleway', sans-serif;
 }
 
 .container{
-    background-color: #222;
     height: 100vh;
+    color: white;
 
 }
 
+/* Intro */
+.opening-statement-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+/* Jumbotron */
 .jumbotron{
-    height: 120vh;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 500px;
     display: flex;
     align-items: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 25px;
 }
-
-
-
-/* Text Animation */
+/* Jumbotron Text Animations */
 .fade-in {
 animation: fadeInDown ease 3.5s;
 }
@@ -47,31 +58,15 @@ animation: fadeInDown ease 3.5s;
                transform: translateY(0);
             }
          }
-        
-/* Icons */
-.ig-ic{
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-        }
-
-.fb-ic{
-    color: #3b5998;
-    }
-
-.tw-ic{
-    color: #00acee;
-    }
 
 /* Nav */
 :root {
-  --background: #222;
+  --background: #333333;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+  color: white;
 }
 
 .content {
@@ -139,7 +134,7 @@ header {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   text-align: left;
   top: 100%;
   left: 0;
@@ -148,6 +143,7 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  
 }
 
 nav ul {
@@ -250,8 +246,23 @@ nav a:hover {
   }
 }
 
+/* Description & stuff */
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
 /* Scrollbar */
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Desc Color */
+.color{
+  color: black;
