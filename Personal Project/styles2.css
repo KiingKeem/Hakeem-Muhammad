@@ -265,11 +265,18 @@ nav a:hover {
   display: none;
 }
 
-/* Desc Color */
-.color{
+/* Opening Statement Styles */
+.os{
   color: black;
 }
 
-/* Unordered List */
+.k{
+    margin-top: 9%;
+    color: black
+}
 
+/* Unordered List Styles */
+li{
+    color: black;
+    margin-left: 13%;
 }
